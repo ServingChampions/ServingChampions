@@ -1,0 +1,778 @@
+/* 
+Colors:
+
+Green: #024C30
+Gold: #B8860B
+*/
+
+/******************************************
+  /* Reset
+  /*******************************************/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+
+/* 
+Header & Footer
+*/
+/* Header Styling */
+.primary-header {
+  background-color: #024C30; /* Primary green color for the background */
+  padding: 10px 0; /* Add padding for spacing */
+}
+
+.primary-nav {
+  display: flex; /* Align items horizontally */
+  justify-content: center; /* Center the navigation items */
+}
+
+.primary-nav ul {
+  list-style: none; /* Remove default list bullets */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+  display: flex; /* Align items horizontally */
+}
+
+.primary-nav li {
+  margin: 0 15px; /* Space out the navigation items */
+}
+
+.primary-nav a {
+  color: #B8860B; /* Secondary gold color for the text */
+  text-decoration: none; /* Remove underline from links */
+  font-family: 'Lato', sans-serif; /* Match the font to your website’s style */
+  font-weight: 300; /* Use a lighter font weight */
+  transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.primary-nav a:hover {
+  color: #ffffff; /* Change text color on hover */
+}
+
+/* Footer Styling */
+.primary-footer {
+  background-color: #024C30; /* Match header background color */
+  padding: 20px 0; /* Add padding for spacing */
+  text-align: center; /* Center footer content */
+}
+
+.primary-footer .primary-nav ul {
+  justify-content: center; /* Center footer navigation items */
+}
+
+.primary-footer .primary-nav a {
+  color: #B8860B; /* Secondary gold color for the text */
+  text-decoration: none; /* Remove underline from links */
+  font-family: 'Lato', sans-serif; /* Match the font to your website’s style */
+  font-weight: 300; /* Use a lighter font weight */
+}
+
+.primary-footer .primary-nav a:hover {
+  color: #ffffff; /* Change text color on hover */
+}
+
+
+
+/* 
+social media banner
+*/
+.socmed{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.socmed img {
+  padding: 10px;
+  height: 50px;
+  margin: 22px 0 22px 0;
+  vertical-align: top;
+}
+
+
+  /******************************************
+  /* Styles
+  /*******************************************/
+
+body{
+  background: #f4f4f4;
+  color: black;
+  margin: 0 250px;
+}
+
+h1, h2, h3, h4 {
+  color: #648880;
+}
+
+h1 {
+  font-size: 25px;
+  line-height: 44px;
+  text-transform: capitalize;
+}
+h2 {
+  font-size: 20px;
+  line-height: 44px;
+}
+h3 {
+  font-size: 18px;
+}
+h4 {
+  font-size: 16px;
+}
+h5 {
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+p{
+  font-size: 15px;
+  font-weight: 381;
+  padding: 5px 0;
+}
+
+  /*/
+  SC footer
+  /*/
+  .sc-footer {
+    text-align: right;
+    font-size: 12px;
+    color: #555;
+    padding-top: 10px;
+    margin-top: 20px;
+}
+
+.sc-footer a {
+    color: #024C30;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+}
+
+.sc-footer a img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.sc-footer a:hover {
+    color: #0056b3;
+}
+
+  /*/
+  SocMed
+  /*/
+
+  .socmed {
+    margin-top: 20px;
+}
+
+.socmed ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.socmed li {
+    margin: 0 10px;
+}
+
+.socmed img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.socmed img:hover {
+    transform: scale(1.2);
+}
+  
+
+    /******************************************
+  /* Index
+  /*******************************************/
+
+  .logo {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    padding: 20px; /* Add some space around the logo */
+  }
+  
+  .logo img {
+    max-width: 100%; /* Make sure the image is responsive */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 250px; /* Set a maximum height for the logo */
+  }
+  
+
+  /* Main Content Styling */
+  
+  
+  .intro {
+    padding: 20px;
+    background-color: #f4f4f4; /* Light background for contrast */
+    text-align: center;
+  }
+  
+  .intro h1 {
+    font-size: 2.5rem;
+    color: #024C30; /* Primary green color */
+    margin-bottom: 20px;
+  }
+  
+  .intro h5 {
+    font-size: 1.12 rem; /* Slightly larger than normal text for emphasis */
+    color: #555; /* Softer color for better readability */
+    margin: 0 0 20px 0;
+    line-height: 1.6; /* Improved readability with increased line height */
+    text-align: center; /* Center align h5 elements */
+    font-weight: 400; /* Normal weight to reduce visual intensity */
+  }
+  
+  .intro .services {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping to the next line if needed */
+    justify-content: center; /* Center align the service boxes */
+    gap: 20px; /* Space between the service boxes */
+  }
+  
+  .intro .service {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 0;
+    max-width: 500px; /* Adjusted width to fit side by side */
+    flex: 1; /* Allow services to grow and fill available space */
+    text-align: left;
+  }
+  
+  .intro .service h2 {
+    font-size: 1.75rem;
+    color: #024C30; /* Primary green color */
+    margin-bottom: 15px;
+    text-align: center; /* Center align h2 elements */
+  }
+  
+  .intro .service p {
+    font-size: 1rem;
+    color: #333; /* Default text color */
+    margin: 0;
+  }
+
+/* Button Container */
+.button-container {
+  display: flex;
+  justify-content: center; /* Center align the buttons */
+  gap: 20px; /* Space between the buttons */
+  margin-top: 20px; /* Space above the buttons */
+}
+
+/* Button Styles */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1rem;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+  background-color: #024C30; /* Primary green color */
+  color: #ffffff; /* White text */
+}
+
+.btn:hover {
+  background-color: #033d23; /* Slightly darker green on hover */
+}
+  
+
+    /******************************************
+  /* About
+  /*******************************************/
+
+  /* General styling for the about section */
+.about {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about h1 {
+  font-size: 36px;
+  color: #024C30; /* Green color for the heading */
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.about p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.about p:last-of-type {
+  margin-bottom: 0; /* Remove bottom margin for the last paragraph */
+}
+
+/* Photo gallery section styling */
+.photo-gallery {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px auto;
+  max-width: 800px;
+  padding: 20px;
+}
+
+.photo-gallery img {
+  width: 30%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.photo-gallery img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+  
+/* Portfolio Button */
+.portfolio-promo {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.portfolio-promo p {
+  font-size: 1.2rem;
+  color: #024C30;
+  margin-bottom: 1rem;
+}
+
+.portfolio-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #024C30;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.portfolio-button:hover {
+  background-color: #022F20;
+}
+
+
+  /******************************************
+  /* Services
+  /*******************************************/
+
+  .intro-text {
+    font-size: 1.2rem;
+    color: #024C30;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .portfolio {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .portfolio h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #024C30;
+  }
+  
+  .websites {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+  }
+  
+  .website {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 8px;
+    transition: transform 0.3s;
+  }
+  
+  .website img {
+    max-width: 100%;
+    border-radius: 8px;
+  }
+  
+  .website:hover {
+    transform: scale(1.05);
+  }
+  
+  .website p {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+  }
+  
+  .website a {
+    color: #024C30;
+    text-decoration: none;
+  }
+  
+  .website a:hover {
+    text-decoration: underline;
+  }
+
+
+
+/******************************************
+  /* contact
+  /*******************************************/
+
+/* General form styles */
+.contactform {
+  max-width: 600px;
+  margin: 40px auto; /* Added top and bottom margin */
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Message above the form */
+.contact-message {
+  margin-bottom: 20px; /* Space between the message and the form */
+}
+
+.contact-message h2 {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 10px 0; /* Space below the heading */
+  font-size: 24px;
+  color: #024C30; /* Green color for the heading */
+}
+
+.contact-message p {
+  margin: 0;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Form styles */
+.contactform label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #333;
+}
+
+.contactform input, 
+.contactform textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.contactform textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+.contactform button {
+  background-color: #024C30; /* Green color */
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  float: right; /* Align button to the right */
+}
+
+.contactform button:hover {
+  background-color: #018d6e; /* Slightly lighter green */
+}
+
+.contactform button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 132, 255, 0.3); /* Focus state */
+}
+
+/* Alternative contact section */
+.alternative-contact {
+  margin-top: 60px;
+  padding: 10px;
+  background-color: #024C30; /* Green background */
+  color: white;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.alternative-contact p {
+  margin: 0;
+  font-size: 18px;
+}
+
+.alternative-contact a {
+  color: #ffffff; /* White color for the link */
+  text-decoration: underline;
+}
+
+
+
+
+  
+  
+
+/******************************************
+  /* Responsive STYLES
+  /*******************************************/
+  @media screen and (max-width: 850px) {
+/* 
+Reset
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* 
+Header & Footer
+*/
+.primary-nav {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+  padding-top: 50px;
+}
+.nav {
+  display: flex;
+  justify-content: center;
+}
+
+.primary-header a,
+.primary-footer a {
+  color: black;
+}
+.primary-header a:hover,
+.primary-footer a:hover {
+  color: #344945;
+}
+
+.nav li {
+  display: inline-block;
+  margin: 10px;
+  vertical-align: top;
+}
+
+.primary-footer{
+  padding-top: 50px;
+  padding-bottom: 15px;
+}
+
+
+
+
+/* 
+Custom Styles
+*/
+
+body{
+  background: #;
+  color: ;;
+  margin: 0 15px;
+}
+
+h1, h2, h3, h4 {
+  color: #;
+}
+
+h1 {
+  font-size: 25px;
+  line-height: 44px;
+  text-transform: capitalize;
+}
+h2 {
+  font-size: 20px;
+  line-height: 44px;
+}
+h3 {
+  font-size: 18px;
+}
+h4 {
+  font-size: 16px;
+}
+h5 {
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+p{
+  font-size: 15px;
+  font-weight: 381;
+  padding: 5px 0;
+}
+
+/* 
+Buttons
+*/
+
+
+.facebook {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 5px;
+}
+
+.facebook img {
+  max-width: 50%;
+  height: auto;
+  max-height: 75px; /* Adjust the max-height as needed */
+  margin: 0 auto; /* Center horizontally */
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 5px; /* Adjust margin as needed */
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #3498db; /* Adjust background color as needed */
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.button:hover {
+  background-color: #2980b9; /* Adjust hover background color as needed */
+}
+
+
+/* 
+Index
+*/
+.intro h1{
+  display: flex;
+  justify-content: center;
+  text-transform: capitalize;
+}
+
+.intro h3{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
+.logoimg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logoimg img {
+  padding: 10px;
+  height: 100%;
+  width: 100%;
+  margin: 10px 0;
+  vertical-align: top;
+}
+
+.quote{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: #b30000;
+  padding: 10px 0;
+}
+
+.quote h2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #b30000;
+  padding: 10px 0;
+}
+
+
+
+a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 5px;
+}
+
+
+
+/* 
+Connect
+*/
+
+.contactpage h2{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contactpage div{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+#contactform{
+  display: none;
+}
+
+  }
