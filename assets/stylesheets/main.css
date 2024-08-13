@@ -409,9 +409,7 @@ p{
     color: #024C30;
   }
 
-  #southerntrax{
-    padding-top: 100px;
-  }
+ 
   
   .websites {
     display: grid;
@@ -596,12 +594,4 @@ Intro
 Services
 */
 
-#southerntrax{
-  padding-top: 30px;
-}
-
-@media screen and (max-width: 850px) {
-  #southerntrax{
-    padding-top: 100px;
   }
-}
