@@ -89,25 +89,6 @@ Header & Footer
   color: #ffffff; /* Change text color on hover */
 }
 
-
-
-/* 
-social media banner
-*/
-.socmed{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.socmed img {
-  padding: 10px;
-  height: 50px;
-  margin: 22px 0 22px 0;
-  vertical-align: top;
-}
-
-
   /******************************************
   /* Styles
   /*******************************************/
@@ -180,6 +161,22 @@ p{
   SocMed
   /*/
 
+  /* 
+social media banner
+*/
+.socmed{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.socmed img {
+  padding: 10px;
+  height: 50px;
+  margin: 22px 0 22px 0;
+  vertical-align: top;
+}
+
   .socmed {
     margin-top: 20px;
 }
@@ -204,6 +201,22 @@ p{
 
 .socmed img:hover {
     transform: scale(1.2);
+}
+
+/* 
+social media banner
+*/
+.socmed{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.socmed img {
+  padding: 10px;
+  height: 50px;
+  margin: 22px 0 22px 0;
+  vertical-align: top;
 }
   
 
@@ -249,36 +262,38 @@ p{
     font-weight: 400; /* Normal weight to reduce visual intensity */
   }
   
-  .intro .services {
+  .services {
     display: flex;
-    flex-wrap: wrap; /* Allows wrapping to the next line if needed */
-    justify-content: center; /* Center align the service boxes */
-    gap: 20px; /* Space between the service boxes */
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 30px 0; /* Adds spacing around the services section */
   }
   
-  .intro .service {
+  .service {
     background-color: #ffffff;
     border: 1px solid #ddd;
     border-radius: 5px;
     padding: 20px;
-    margin: 0;
-    max-width: 500px; /* Adjusted width to fit side by side */
-    flex: 1; /* Allow services to grow and fill available space */
+    max-width: 500px;
+    flex: 1 1 200px; /* Ensures flexibility and proper width for responsiveness */
     text-align: left;
   }
   
-  .intro .service h2 {
+  .service h2 {
     font-size: 1.75rem;
     color: #024C30; /* Primary green color */
     margin-bottom: 15px;
     text-align: center; /* Center align h2 elements */
   }
   
-  .intro .service p {
+  .service p {
     font-size: 1rem;
     color: #333; /* Default text color */
     margin: 0;
   }
+  
+  
 
 /* Button Container */
 .button-container {
@@ -588,10 +603,26 @@ Intro
 
 .services {
   flex-direction: column;
+  align-items: center;
+}
+
+.service {
+  max-width: 100%;
 }
 
 /* 
 Services
 */
 
+  }
+   /* Responsive Design */
+   @media (max-width: 768px) {
+    .services {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .service {
+      max-width: 100%;
+    }
   }
